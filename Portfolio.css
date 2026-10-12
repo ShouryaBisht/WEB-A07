@@ -1,6 +1,6 @@
 /* =========================================
    SHOURYA BISHT — STUDENT PORTFOLIO
-   Save this file as: style.css
+   Save this file as: Portfolio.css
    ========================================= */
 
 /* 1. Theme + reset */
@@ -264,11 +264,25 @@ body {
     font-family: Consolas, monospace;
     font-size: 1.4rem;
     font-weight: 700;
+    pointer-events: none; /* lets clicks pass through to the link underneath */
 }
 
 #projects > .container .box:hover {
     transform: translateY(-4px);
     border-color: rgba(118, 169, 255, 0.55);
+}
+
+/* NEW: the link stretches over the whole box so the entire box is clickable */
+#projects > .container .box a {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+#projects > .container .box a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }
 
 .project-link {
