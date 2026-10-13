@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Hair Theorey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="offer-strip">✦ BOOK TODAY AND ENJOY OUR SPECIAL OFFERS! ✦</div>
+    <main class="form-page">
+        <div class="form-header">
+            <a class="logo" href="index.html">HAIR<span>THEOREY</span></a>
+            <a class="back-link" href="index.html">← Back to Home</a>
+        </div>
+        <div class="form-intro">
+            <p class="eyebrow">YOUR STYLE STARTS HERE</p>
+            <h1>Book Your <span>Appointment</span></h1>
+            <p>Fill in your details and choose your preferred salon service.</p>
+        </div>
+        <div class="appointment-container">
+            <aside class="appointment-info">
+                <p class="eyebrow">THE PREMIUM EXPERIENCE</p>
+                <h2>Make Time for Yourself.</h2>
+                <p>A fresh haircut, a relaxing hair spa or a complete makeover — your next great look starts here.</p>
+                <div class="info-item"><strong>📍 OUR LOCATION</strong>Your City, India</div>
+                <div class="info-item"><strong>🕒 OPENING HOURS</strong>Monday – Saturday<br>10:00 AM – 9:00 PM</div>
+                <div class="info-item"><strong>🎁 SPECIAL OFFER</strong>Get 20% off on your first visit.</div>
+                <div class="info-item"><strong>📞 CONTACT</strong>+91 98765 43210</div>
+            </aside>
+            <section class="appointment-form">
+                <h2>Appointment Details</h2>
+                <p class="form-note">Fields marked * are required.</p>
+                <form action="thankyou.html" method="get">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" minlength="2" maxlength="60" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[6-9][0-9]{9}" title="Enter a valid 10-digit Indian mobile number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Choose Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="Classic Haircut">Classic Haircut - ₹299</option>
+                                <option value="Beard Styling">Beard Styling - ₹199</option>
+                                <option value="Hair Spa">Hair Spa - ₹599</option>
+                                <option value="Premium Facial">Premium Facial - ₹499</option>
+                                <option value="Hair Colour">Hair Colour - ₹799</option>
+                                <option value="Royal Makeover">Royal Makeover Combo - ₹799</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="stylist">Preferred Stylist</label>
+                            <select id="stylist" name="stylist">
+                                <option>Any Available Stylist</option><option>Senior Stylist</option><option>Expert Barber</option><option>Female Stylist</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Appointment Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time</option>
+                                <option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option>
+                                <option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option>
+                                <option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option>
+                                <option>7:00 PM</option><option>8:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="offer">Discount Offer</label>
+                            <select id="offer" name="offer">
+                                <option>No Offer</option><option>First Visit - 20% Off</option><option>Huge Combo Offer</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" name="requests" maxlength="300" placeholder="Preferred style or any special requirements..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn form-submit">SUBMIT APPOINTMENT REQUEST →</button>
+                    <p class="small-print">Demo form: this page redirects to a confirmation page. It does not send or store your details.</p>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
