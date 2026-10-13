@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBasket - Online Grocery Store</title>
+    <link rel="stylesheet" href="QuickBasket.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🛒 Quick<span>Basket</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#products" class="cart">🛍 My Cart</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="tagline">FRESH GROCERIES, EVERY DAY</p>
+            <h1>Good Food.<br><span>Better Life.</span></h1>
+
+            <p>
+                Get fresh fruits, vegetables and daily essentials
+                delivered right to your doorstep.
+            </p>
+
+            <form action="#products" class="search-box">
+                <input type="text" placeholder="Search for groceries...">
+                <button type="submit">Search</button>
+            </form>
+
+            <a href="#products" class="btn">Shop Now →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80"
+                alt="Fresh vegetables and groceries">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section" id="categories">
+        <div class="section-heading">
+            <h2>Shop by Category</h2>
+            <p>Everything you need in one place</p>
+        </div>
+
+        <div class="category-container">
+            <a href="#products" class="category-card">
+                <div class="category-icon">🍎</div>
+                <h3>Fruits</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <div class="category-icon">🥦</div>
+                <h3>Vegetables</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <div class="category-icon">🥛</div>
+                <h3>Dairy</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <div class="category-icon">🍞</div>
+                <h3>Bakery</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <div class="category-icon">🍪</div>
+                <h3>Snacks</h3>
+            </a>
+
+            <a href="#products" class="category-card">
+                <div class="category-icon">🍚</div>
+                <h3>Staples</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="products">
+        <div class="section-heading">
+            <h2>Popular Products</h2>
+            <p>Fresh picks at great prices</p>
+        </div>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=400&q=80"
+                    alt="Fresh bananas">
+                <h3>Fresh Bananas</h3>
+                <p class="quantity">1 dozen</p>
+                <p class="price">₹40</p>
+                <a href="#contact" class="add-button">Add to Cart</a>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=400&q=80"
+                    alt="Fresh tomatoes">
+                <h3>Fresh Tomatoes</h3>
+                <p class="quantity">1 kg</p>
+                <p class="price">₹30</p>
+                <a href="#contact" class="add-button">Add to Cart</a>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=400&q=80"
+                    alt="Fresh milk">
+                <h3>Fresh Milk</h3>
+                <p class="quantity">1 litre</p>
+                <p class="price">₹56</p>
+                <a href="#contact" class="add-button">Add to Cart</a>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+                    alt="Fresh bread">
+                <h3>Brown Bread</h3>
+                <p class="quantity">400 g</p>
+                <p class="price">₹45</p>
+                <a href="#contact" class="add-button">Add to Cart</a>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=400&q=80"
+                    alt="Potato chips">
+                <h3>Potato Chips</h3>
+                <p class="quantity">Pack of 1</p>
+                <p class="price">₹20</p>
+                <a href="#contact" class="add-button">Add to Cart</a>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvvaxDVRjEtOXv_fp_6Jz9JpdFTxScUH68nQV7VJm_ng&s=10"
+                    alt="Fresh eggs">
+                <h3>Fresh Eggs</h3>
+                <p class="quantity">6 pieces</p>
+                <p class="price">₹42</p>
+                <a href="#contact" class="add-button">Add to Cart</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offer-section" id="offers">
+        <div>
+            <p class="offer-label">LIMITED TIME OFFER</p>
+            <h2>Save More on Your Groceries!</h2>
+            <p>Get up to 30% off on selected daily essentials.</p>
+            <a href="#products" class="offer-button">Explore Products →</a>
+        </div>
+
+        <div class="offer-emoji">🛒🥑🍊</div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="section-heading">
+            <h2>Why Choose QuickBasket?</h2>
+            <p>Shopping made easy and convenient</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div>🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Your daily essentials delivered to your door.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>🌿</div>
+                <h3>Fresh Products</h3>
+                <p>Fresh groceries for your everyday needs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>💰</div>
+                <h3>Best Prices</h3>
+                <p>Quality products at affordable prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Stay Updated!</h2>
+        <p>Enter your email to receive our latest offers.</p>
+
+        <form action="#contact" class="email-form">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>🛒 Quick<span>Basket</span></h2>
+                <p>Your everyday grocery shopping partner.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#offers">Offers</a>
+            </div>
+
+            <div>
+                <h3>Customer Support</h3>
+                <p>Email: support@quickbasket.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 QuickBasket. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
